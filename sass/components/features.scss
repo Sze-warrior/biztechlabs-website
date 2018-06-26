@@ -1,0 +1,35 @@
+.features-wrapper{
+	display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+
+    @media screen and(max-width: $media-mobile){
+    	display: block;
+    }
+}
+
+.features-item{
+	min-height: 100%;
+    width: $features-width;
+    background: red;
+	margin-bottom: 0;
+
+    @media screen and(max-width: $media-mobile){
+    	width: 100%;
+    	margin-bottom: 30px;
+
+    	&:last-child{
+	    	margin-bottom: 0;	
+		}
+    }
+
+}
+
+.feature-icon{
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background: black;
+	display: block;
+    margin: 0 auto;	
+}

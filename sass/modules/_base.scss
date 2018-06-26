@@ -1,0 +1,42 @@
+@import "variables.scss";
+
+html,body{
+	margin: 0;
+	font-family: 'Roboto', helvetica, arial, times new roman;
+}
+
+h1{
+	font-size: $font-size-desktop-h1;
+	text-align: center;		
+	font-weight: $font-weight-light;	
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: $line-height-base;
+	color: $color-grey-base;
+
+	@media screen and (max-width: $media-mobile){
+		font-size: $font-size-mobile-h1;
+	}
+}
+
+h2{
+	margin-top: 0;
+	text-align: center;		
+    font-size: $font-size-desktop-h2;
+    line-height: $line-height-base;
+	font-weight: $font-weight-light;	
+    margin-bottom: 20px;
+
+	@media screen and (max-width: $media-mobile){
+    	font-size: $font-size-mobile-h2;
+	}
+
+}
+
+p{
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $color-grey-base;
+	margin-top: 0;
+    margin-bottom: 20px;	
+}

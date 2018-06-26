@@ -1,0 +1,119 @@
+html, body {
+  margin: 0;
+  font-family: 'Roboto', helvetica, arial, times new roman; }
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 28px;
+  color: #4d4d4d; }
+  @media screen and (max-width: 767px) {
+    h1 {
+      font-size: 28px; } }
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 300;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 767px) {
+    h2 {
+      font-size: 24px; } }
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #4d4d4d;
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  display: block;
+  padding: 60px 0; }
+
+.container--intro, .container--condensed {
+  max-width: 700px; }
+
+.container--light-grey {
+  background-color: #f2f2f2;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2; }
+
+.container--mid-grey {
+  background-color: #4d4d4d; }
+  .container--mid-grey .container--mid-grey-heading, .container--mid-grey .container--mid-grey-content {
+    color: white; }
+
+.container, .container--intro, .container--grey {
+  height: 100%; }
+
+.row {
+  max-width: 860px;
+  padding-left: 0;
+  padding-right: 0; }
+  @media screen and (max-width: 767px) {
+    .row {
+      padding-left: 20px;
+      padding-right: 20px; } }
+
+.hero-container {
+  height: 90vh;
+  background: #2196F3; }
+
+.features-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0; }
+  @media screen and (max-width: 767px) {
+    .features-wrapper {
+      display: block; } }
+
+.features-item {
+  min-height: 100%;
+  width: 200px;
+  background: red;
+  margin-bottom: 0; }
+  @media screen and (max-width: 767px) {
+    .features-item {
+      width: 100%;
+      margin-bottom: 30px; }
+      .features-item:last-child {
+        margin-bottom: 0; } }
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  background: black;
+  display: block;
+  margin: 0 auto; }
+
+.button-primary {
+  width: 200px;
+  height: 55px;
+  background-color: #2196F3;
+  text-align: center;
+  line-height: 55px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: white;
+  font-size: 18px; }
