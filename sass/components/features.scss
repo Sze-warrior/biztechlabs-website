@@ -11,7 +11,6 @@
 .features-item{
 	min-height: 100%;
     width: $features-width;
-    background: red;
 	margin-bottom: 0;
 
     @media screen and(max-width: $media-mobile){
@@ -25,9 +24,13 @@
 
 }
 
+.features-description{
+    margin-bottom: 0;
+}
+
 .feature-icon{
-	width: 50px;
-	height: 50px;
+	width: $features-icon-width;
+	height: $features-icon-width;
 	border-radius: 100%;
 	background: black;
 	display: block;

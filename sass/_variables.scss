@@ -8,7 +8,7 @@ $color-grey-light: #f2f2f2;
 $color-grey-base: #4d4d4d;
 $color-border-color: #e2e2e2;
 $color-brand-blue: #2196F3;
-
+$color-green-base: #4caf50;
 
 
 //Typography
@@ -27,12 +27,13 @@ $font-weight-light: 300;
 
 //Layout 
 $container-width: 860px;
-
+$grid-gutter-width: 40px;
 
 
 //Components 
 $features-width: 200px;
-
+$features-icon-width: 64px;
+$features-icon-height: $features-icon-width;
 //Buttons
 $button-height: 44px;
 $button-width: 280px;

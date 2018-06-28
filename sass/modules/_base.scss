@@ -7,7 +7,6 @@ html,body{
 
 h1{
 	font-size: $font-size-desktop-h1;
-	text-align: center;		
 	font-weight: $font-weight-light;	
     margin-top: 0;
     margin-bottom: 30px;
@@ -31,6 +30,11 @@ h2{
     	font-size: $font-size-mobile-h2;
 	}
 
+}
+
+h3{
+	text-align: center;
+	margin: 20px 0 10px;
 }
 
 p{

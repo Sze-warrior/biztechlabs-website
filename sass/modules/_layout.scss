@@ -5,6 +5,10 @@
     margin: 0 auto;
     display: block;
     padding: 60px 0;
+
+    @media screen and (max-width: $media-mobile){
+	    padding: 40px 0;
+    }
 }
 
 .container--intro, .container--condensed{
