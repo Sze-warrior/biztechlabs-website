@@ -3,7 +3,7 @@ html, body {
   font-family: 'Roboto', helvetica, arial, times new roman; }
 
 h1 {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 30px;
@@ -11,7 +11,7 @@ h1 {
   color: #4d4d4d; }
   @media screen and (max-width: 767px) {
     h1 {
-      font-size: 28px; } }
+      font-size: 42px; } }
 
 h2 {
   margin-top: 0;
@@ -71,7 +71,17 @@ p {
 
 .hero-container {
   height: 90vh;
-  background: #2196F3; }
+  background-image: url("../images/hero-banner.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center top;
+  position: relative; }
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0; }
 
 .hero-row {
   display: -webkit-box;
@@ -98,12 +108,20 @@ p {
           align-items: center;
   height: 100%; }
 
-.hero-content {
+.hero-title, .hero-intro {
+  color: white; }
+
+.hero-intro {
+  font-size: 20px;
+  margin-bottom: 40px; }
+
+.hero-content-wrapper {
   max-width: 700px;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  z-index: 2; }
   @media screen and (max-width: 767px) {
-    .hero-content {
+    .hero-content-wrapper {
       padding-left: 20px;
       padding-right: 20px; } }
 
@@ -113,7 +131,7 @@ p {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex; }
-  .hero-btn-row .button--ghost-white {
+  .hero-btn-row .button-primary:first-child {
     margin-right: 15px; }
 
 footer {
@@ -125,6 +143,9 @@ footer {
   margin: 0 auto;
   display: block;
   padding: 20px 0; }
+
+.footer-copyright {
+  text-align: center; }
 
 .features-wrapper {
   display: -webkit-box;
@@ -162,7 +183,7 @@ footer {
   -webkit-border-radius: 100%;
      -moz-border-radius: 100%;
           border-radius: 100%;
-  background: black;
+  background: #2196F3;
   display: block;
   margin: 0 auto; }
 
@@ -177,19 +198,29 @@ footer {
   border-radius: 8px;
   font-weight: 700;
   color: white;
-  font-size: 18px; }
+  font-size: 18px;
+  border: 2px solid #2196F3; }
+  .button-primary:hover {
+    background-color: #0a6ebd;
+    border: 2px solid #0a6ebd;
+    cursour: pointer; }
 
 .button-primary--green {
   background-color: #4caf50;
   border: 2px solid #4caf50; }
   .button-primary--green:hover {
+    cursour: pointer;
     background-color: #357a38;
     border: 2px solid #357a38; }
 
 .button--ghost-white {
-  background-color: none;
+  background-color: rgba(0, 0, 0, 0);
   color: white;
   border: 2px solid white; }
+  .button--ghost-white:hover {
+    cursour: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white; }
 
 .button--center {
   display: block;
@@ -198,3 +229,45 @@ footer {
 @media screen and (max-width: 767px) {
   .button--mobile {
     width: 100%; } }
+
+.split-img-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .split-img-container .split-img {
+    width: 300px;
+    height: 300px;
+    background-color: red; }
+    .split-img-container .split-img:first-child {
+      margin-right: 15px;
+      margin-bottom: 0; }
+    @media screen and (max-width: 767px) {
+      .split-img-container .split-img {
+        width: 100%; }
+        .split-img-container .split-img:first-child {
+          margin-right: 0;
+          margin-bottom: 15px; } }
+  @media screen and (max-width: 767px) {
+    .split-img-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }

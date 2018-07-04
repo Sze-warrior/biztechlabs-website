@@ -2,7 +2,18 @@
 
 .hero-container{
 	height: $hero-height;
-	background: $color-brand-blue;
+   	background-image: url("../images/hero-banner.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: center top;
+    position: relative;
+}
+
+.hero-overlay{
+	background-color: rgba(0,0,0, 0.5);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
 }
 
 .hero-row{
@@ -11,13 +22,22 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-
 }
 
-.hero-content{
-    max-width: 700px;
+.hero-title, .hero-intro{
+	color: white;
+}
+
+.hero-intro{
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+.hero-content-wrapper{
+    max-width: $container-width-condensed;
     padding-left: 0;
     padding-right: 0;
+    z-index: 2;
 
    	@media screen and (max-width: $media-mobile){
 	    padding-left: $grid-gutter-width/2;
@@ -28,7 +48,7 @@
 .hero-btn-row{
 	display: flex;
 
-	.button--ghost-white{
+	.button-primary:first-child{
 		margin-right: 15px;
 	}
 }

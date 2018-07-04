@@ -1,7 +1,7 @@
 .button-primary{
 	width: 200px;
     height: 55px;
-    background-color: #2196F3;
+    background-color: $color-brand-blue;
     text-align: center;
     line-height: 55px;
     -webkit-border-radius: 8px;
@@ -10,6 +10,14 @@
     font-weight: 700;
     color: white;
     font-size: 18px;
+    border: 2px solid $color-brand-blue;
+
+    &:hover{
+        background-color: darken($color-brand-blue, 15%);
+        border: 2px solid darken($color-brand-blue, 15%);
+        cursour: pointer;
+    }
+
 }
 
 .button-primary--green{
@@ -17,15 +25,23 @@
     border: 2px solid $color-green-base;
 
     &:hover{
+        cursour: pointer;
         background-color: darken($color-green-base, 15%);
         border: 2px solid darken($color-green-base, 15%);
     }
 }
 
 .button--ghost-white{
-    background-color: none;
+    background-color: rgba(0,0,0,0);
     color: white;
     border: 2px solid white;
+
+    &:hover{
+        cursour: pointer;
+        background-color: rgba(0,0,0,0);
+        border: 2px solid white;
+    }
+
 }
 
 .button--center{
