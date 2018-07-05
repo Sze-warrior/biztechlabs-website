@@ -9,11 +9,16 @@
 }
 
 .hero-overlay{
-	background-color: rgba(0,0,0, 0.5);
+background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(255,255,255,0) 130%);
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	top: 0;
+}
+
+.hero-logo{
+	width: $hero-logo-width;
+    padding-bottom: 30px;
 }
 
 .hero-row{
@@ -39,6 +44,11 @@
     padding-right: 0;
     z-index: 2;
 
+   	@media screen and (max-width: $media-tablet){
+	    padding-left: $grid-gutter-width/2;
+	    padding-right: $grid-gutter-width/2;    	
+    }
+
    	@media screen and (max-width: $media-mobile){
 	    padding-left: $grid-gutter-width/2;
 	    padding-right: $grid-gutter-width/2;    	
@@ -47,8 +57,32 @@
 
 .hero-btn-row{
 	display: flex;
+	flex-direction: row;
 
 	.button-primary:first-child{
 		margin-right: 15px;
+		order: 0;
+		margin-bottom: 0;
+	}
+
+	.button--ghost-white{
+    	order: 0;		
+	}
+
+	@media screen and (max-width: $media-mobile){
+
+		flex-direction: column;
+
+
+		.button-primary:first-child{
+			margin-right: 0;
+			order: 2;
+		}
+
+		.button--ghost-white{
+	    	order: 1;
+	    	margin-top: 15px;		
+		}
+
 	}
 }
