@@ -79,7 +79,10 @@ a {
   background-image: url("../images/hero-banner.jpg");
   background-repeat: no-repeat, repeat;
   background-position: center top;
-  position: relative; }
+  position: relative;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover; }
 
 .hero-overlay {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(130%, rgba(255, 255, 255, 0)));
