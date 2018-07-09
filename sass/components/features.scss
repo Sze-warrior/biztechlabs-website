@@ -12,16 +12,44 @@
 	min-height: 100%;
     width: $features-width;
 	margin-bottom: 0;
+    margin-right: $grid-gutter-width/2;
+
+    .icon-base{
+        display: block;
+        margin: 0 auto;
+
+        &.icon-friend{
+            padding-top: 23px;
+        }
+
+        &.icon-computer{
+            padding-top: 22px;
+        }
+
+        &.icon-speech{
+            padding-top: 26px;
+        }
+
+    }
+
+    &:last-child{
+        margin-right: 0;
+    }
 
     @media screen and(max-width: $media-mobile){
     	width: 100%;
+        margin-right: 0;
     	margin-bottom: 30px;
-
-    	&:last-child{
-	    	margin-bottom: 0;	
-		}
     }
 
+}
+
+.features-heading{
+    text-align: left;
+
+    @media screen and (max-width: $media-mobile){
+        text-align: center;
+    }
 }
 
 .features-description{
