@@ -74,22 +74,23 @@ a {
       padding-right: 20px; } }
 
 .hero-container {
-  height: 90vh;
+  height: 95vh;
   background-image: url("../images/hero-banner-lg.jpg");
   background-repeat: no-repeat, repeat;
   background-position: center top;
   position: relative;
   -moz-background-size: cover;
     -o-background-size: cover;
-       background-size: cover; }
+       background-size: cover;
+  height: 95vh; }
 
 .hero-overlay {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(130%, rgba(255, 255, 255, 0)));
-  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 130%);
-  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 130%);
-  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 130%);
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 130%);
-  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(140%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 140%);
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 140%);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 140%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 140%);
+  height: 95vh;
   width: 100%;
   position: absolute;
   top: 0; }
@@ -139,8 +140,17 @@ a {
      -moz-transform: translate(0px, 0px);
       -ms-transform: translate(0px, 0px);
        -o-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-  opacity: 0;
+          transform: translate(0px, 0px); }
+  @media screen and (max-width: 1025px) {
+    .hero-content-wrapper {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media screen and (max-width: 767px) {
+    .hero-content-wrapper {
+      padding-left: 20px;
+      padding-right: 20px; } }
+
+.hero-intro-row {
   -webkit-animation: hero-slide-in 0.5s ease-in-out;
      -moz-animation: hero-slide-in 0.5s ease-in-out;
        -o-animation: hero-slide-in 0.5s ease-in-out;
@@ -148,7 +158,8 @@ a {
   -webkit-animation-fill-mode: forwards;
      -moz-animation-fill-mode: forwards;
        -o-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
+          animation-fill-mode: forwards;
+  opacity: 0; }
 
 @-webkit-keyframes hero-slide-in {
   0% {
@@ -201,14 +212,6 @@ a {
        -moz-transform: translate(0px, 0px);
          -o-transform: translate(0px, 0px);
             transform: translate(0px, 0px); } }
-  @media screen and (max-width: 1025px) {
-    .hero-content-wrapper {
-      padding-left: 20px;
-      padding-right: 20px; } }
-  @media screen and (max-width: 767px) {
-    .hero-content-wrapper {
-      padding-left: 20px;
-      padding-right: 20px; } }
 
 .hero-btn-row {
   display: -webkit-box;
@@ -222,7 +225,44 @@ a {
      -moz-box-orient: horizontal;
      -moz-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  -webkit-animation: btns-slide-in 0.8s ease-in-out;
+     -moz-animation: btns-slide-in 0.8s ease-in-out;
+       -o-animation: btns-slide-in 0.8s ease-in-out;
+          animation: btns-slide-in 0.8s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+       -o-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+  -webkit-animation-delay: 0.2s;
+     -moz-animation-delay: 0.2s;
+       -o-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes btns-slide-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes btns-slide-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes btns-slide-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes btns-slide-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
   .hero-btn-row .button-primary:first-child {
     margin-right: 15px;
     -webkit-box-ordinal-group: 1;
@@ -269,7 +309,7 @@ footer {
   max-width: 860px;
   margin: 0 auto;
   display: block;
-  padding: 15px 0; }
+  padding: 30px 0; }
 
 .footer-copyright {
   text-align: center;
@@ -413,7 +453,7 @@ footer {
      -moz-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 20px; }
+  margin-top: 40px; }
   .split-img-container .split-img:first-child {
     margin-right: 15px;
     margin-bottom: 0; }
@@ -431,7 +471,8 @@ footer {
          -moz-box-orient: vertical;
          -moz-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      margin-top: 20px; } }
 
 .img-responsive {
   width: 100%; }

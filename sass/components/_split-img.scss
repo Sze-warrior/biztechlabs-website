@@ -3,7 +3,7 @@
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-	margin-top:20px; 
+	margin-top:40px; 
 
 	.split-img{
 
@@ -25,6 +25,7 @@
 
 	@media screen and (max-width: $media-mobile-sml){
 		flex-direction: column;
+		margin-top:20px; 
 	}
 }
 
