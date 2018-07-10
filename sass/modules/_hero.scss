@@ -64,7 +64,7 @@
     opacity: 0;
 
     @keyframes hero-slide-in {
-  		0%   { opacity: 0; transform: translate(0, -100px);}
+  		0%   { opacity: 0; transform: translate(0, -95px);}
   		50%   { opacity: 0.2;}
   		100% { opacity: 1; transform: translate(0px, 0px);}
 	}
