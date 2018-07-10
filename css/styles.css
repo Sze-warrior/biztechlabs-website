@@ -85,11 +85,11 @@ a {
   height: 98vh; }
 
 .hero-overlay {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(140%, rgba(255, 255, 255, 0)));
-  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 140%);
-  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 140%);
-  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 140%);
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 140%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(140%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 140%);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 140%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 140%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 140%);
   height: 98vh;
   width: 100%;
   position: absolute;

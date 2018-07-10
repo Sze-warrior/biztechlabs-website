@@ -11,7 +11,7 @@
 }
 
 .hero-overlay{
-	background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(255,255,255,0) 140%);
+	background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(255,255,255,0) 140%);
 	height: $hero-height;
 	width: 100%;
 	position: absolute;
