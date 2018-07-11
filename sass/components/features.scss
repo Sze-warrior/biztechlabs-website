@@ -17,19 +17,6 @@
     .icon-base{
         display: block;
         margin: 0 auto;
-
-        &.icon-friend{
-            padding-top: 23px;
-        }
-
-        &.icon-computer{
-            padding-top: 22px;
-        }
-
-        &.icon-speech{
-            padding-top: 26px;
-        }
-
     }
 
     &:last-child{
@@ -61,6 +48,8 @@
 	height: $features-icon-width;
 	border-radius: 100%;
 	background: $color-brand-blue;
-	display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;	
 }
