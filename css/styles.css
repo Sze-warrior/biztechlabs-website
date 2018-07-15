@@ -463,7 +463,7 @@ footer {
     margin: 10px 10px 0; }
   .feature-mobile-scroller .circle--active {
     background-color: #00B5E9; }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 576px) {
     .feature-mobile-scroller {
       display: block; } }
 
