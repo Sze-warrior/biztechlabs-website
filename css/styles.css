@@ -337,11 +337,12 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 40px 0 0;
-  overflow-x: auto; }
+  overflow-x: auto;
+  position: relative; }
   @media screen and (max-width: 576px) {
     .features-wrapper {
       overflow-x: scroll;
-      padding: 20px 10px 0; } }
+      padding: 20px 0; } }
 
 .features-item {
   min-height: 100%;
@@ -383,7 +384,7 @@ footer {
   @media screen and (max-width: 767px) {
     .features-item {
       width: 100%;
-      margin-bottom: 30px; } }
+      margin-bottom: 20px; } }
   @media screen and (max-width: 576px) {
     .features-item {
       padding: 20px;
@@ -439,7 +440,8 @@ footer {
   width: 100%;
   background-color: #F4F4F7;
   z-index: 3;
-  bottom: 0; }
+  bottom: 0;
+  display: none; }
   .feature-mobile-scroller .circle-row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -455,10 +457,15 @@ footer {
     -webkit-border-radius: 100%;
        -moz-border-radius: 100%;
             border-radius: 100%;
-    width: 16px;
-    height: 16px;
-    background-color: green;
-    margin: 5px 10px 0; }
+    width: 12px;
+    height: 12px;
+    background-color: #4d4d4d;
+    margin: 10px 10px 0; }
+  .feature-mobile-scroller .circle--active {
+    background-color: #00B5E9; }
+  @media screen and (max-width: 650px) {
+    .feature-mobile-scroller {
+      display: block; } }
 
 .button-primary {
   width: 200px;
