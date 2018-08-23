@@ -95,21 +95,4 @@
 	.button--ghost-white{
     	order: 0;		
 	}
-
-	@media screen and (max-width: $media-mobile-sml){
-
-		flex-direction: column;
-
-
-		.button-primary:first-child{
-			margin-right: 0;
-			order: 2;
-		}
-
-		.button--ghost-white{
-	    	order: 1;
-	    	margin-top: 20px;		
-		}
-
-	}
 }
